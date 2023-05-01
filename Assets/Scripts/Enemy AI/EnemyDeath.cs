@@ -7,21 +7,34 @@ using UnityEngine;
 public class EnemyDeath : MonoBehaviour
 {
     [SerializeField] private int enemyLife;
-    [SerializeField] private int enemyDeathsCont = 0;
-    public Text scoreText;
+    private int savePoints = 0;        
+    [SerializeField] private int enemyPointsValue = 0;
+    
+
+    
 
     void Start()
-    {          
+    {               
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (enemyLife <= 0) { 
-            Destroy(gameObject);
-            enemyDeathsCont+=10;
+        Score();
+       
+    }
+
+    public void Score()
+    {
+        if (enemyLife <= 0)
+        {
+           Destroy(gameObject); 
+           savePoints += enemyPointsValue;
+            //Debug.Log(savePoints);
+            ScoreCont.score += savePoints;
+            ScoreCont.maxScore += savePoints;
         }
-        scoreText.text = enemyDeathsCont.ToString("000");
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
