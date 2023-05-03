@@ -32,8 +32,8 @@ public class EnemyDeath : MonoBehaviour
            Destroy(gameObject); 
            savePoints += enemyPointsValue;
             //Debug.Log(savePoints);
-            ScoreCont.score += savePoints;
-            ScoreCont.maxScore += savePoints;
+            //ScoreCont.score += savePoints;
+            ScoreCont.matchScore += savePoints;
         }
     }
 
