@@ -6,17 +6,27 @@ using UnityEngine.UI;
 public class ScoreCont : MonoBehaviour
 {
     public Text scoreText;    
-    public static int score;
-    public static int maxScore;
+    //public static int finalMatchScore;
+    //public static int maxScore;
+    public static int matchScore;
 
     
+    /** verificar/testar : 
+     * 1 - Sistema de pontuação tem que estar funcionando(na tela de jogo)
+     * 
+     * 2 - No script "Life" do jogador, 
+     * a pontuação da partida deve estar sendo salva corretamente.
+     * 
+     * 3 - O script ScoreSaves tem que estar funcionando da seguinte maneira:
+     * ao entrar na cena "Game Over" o valor de Score deve ser o valor salvo na variavel.
+     * 
+     * resultado 3/3 (tudo funcionando crlhouuuuu)
+     */
     
-          
-
     void Start()
-    {        
-        maxScore = PlayerPrefs.GetInt("score");
-        Debug.Log(PlayerPrefs.GetInt("score"));
+    {
+        //matchScore = PlayerPrefs.GetInt("MatchScore");
+        //Debug.Log(PlayerPrefs.GetInt("MatchScore"));
     }
 
     
@@ -29,8 +39,12 @@ public class ScoreCont : MonoBehaviour
 
     void UpdatedScore()
     {        
-        scoreText.text = score.ToString("000");
-        
-        PlayerPrefs.SetInt("score", maxScore);
+        scoreText.text = matchScore.ToString("000");
+
+        //finalMatchScore = matchScore;
+
+        //Debug.Log(finalMatchScore);
+        //PlayerPrefs.SetInt("MatchScore", finalMatchScore);
+        //PlayerPrefs.SetInt("MaxScore", maxScore);
     }
 }
