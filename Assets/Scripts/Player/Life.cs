@@ -12,8 +12,7 @@ public class Life : MonoBehaviour
     private int finalMatchScore;
 
     void Start()
-    {
-        life = 3;
+    {                
         playerSpriteColor = GetComponent<SpriteRenderer>();
     }
 
@@ -29,7 +28,19 @@ public class Life : MonoBehaviour
             ScoreCont.matchScore = 0;
             PlayerPrefs.SetInt("FinalScore", finalMatchScore);            
         }
+
+        cheatDeVida();
+
     }
+
+    void cheatDeVida()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            life += 3;
+        }
+    }
+
 
     private void OnTriggerEnter2D(Collider2D c)
     {
@@ -38,7 +49,7 @@ public class Life : MonoBehaviour
             life--;
 
             //change the color based in player current life
-            if (life == 3)
+            if (life >= 3)
             {
                 playerSpriteColor.color = new Color(1f, 1f, 1f, 1f); //yellow
             }
