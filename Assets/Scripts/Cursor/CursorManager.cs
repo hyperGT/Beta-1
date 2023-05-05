@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 /**
  * @CursorManager
- * Gerenciador de Cursor de mouse
+ * Gerenciador de Cursor do mouse
  */
 
 public class CursorManager : MonoBehaviour
