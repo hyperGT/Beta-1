@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyProjectile : MonoBehaviour
 {
-
+    //script do funcionamento do projétil disparado pelo inimigo
     [SerializeField] float speed;
     [SerializeField] float lifeTime;
 

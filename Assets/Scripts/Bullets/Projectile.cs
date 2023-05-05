@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    //script do funcionamento do projétil disparado pelo player
     void Update() => StartCoroutine(destroyProjectile());
     IEnumerator destroyProjectile()
     {
