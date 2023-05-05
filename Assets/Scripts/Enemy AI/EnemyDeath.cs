@@ -30,10 +30,8 @@ public class EnemyDeath : MonoBehaviour
         if (enemyLife <= 0)
         {
            Destroy(gameObject); 
-           savePoints += enemyPointsValue;
-            //Debug.Log(savePoints);
-            //ScoreCont.score += savePoints;
-            ScoreCont.matchScore += savePoints;
+           savePoints += enemyPointsValue;            
+           ScoreCont.matchScore += savePoints;
         }
     }
 
