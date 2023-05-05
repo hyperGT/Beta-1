@@ -20,7 +20,7 @@ public class ScoreCont : MonoBehaviour
      * 3 - O script ScoreSaves tem que estar funcionando da seguinte maneira:
      * ao entrar na cena "Game Over" o valor de Score deve ser o valor salvo na variavel.
      * 
-     * resultado 3/3 (tudo funcionando crlhouuuuu)
+     * resultado 3/3 (tudo funcionandoooo)
      */
     
     void Start()
@@ -39,12 +39,6 @@ public class ScoreCont : MonoBehaviour
 
     void UpdatedScore()
     {        
-        scoreText.text = matchScore.ToString("000");
-
-        //finalMatchScore = matchScore;
-
-        //Debug.Log(finalMatchScore);
-        //PlayerPrefs.SetInt("MatchScore", finalMatchScore);
-        //PlayerPrefs.SetInt("MaxScore", maxScore);
+        scoreText.text = matchScore.ToString("000");       
     }
 }
