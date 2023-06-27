@@ -16,9 +16,9 @@ Beta 1 é um jogo shooter 2D estilo arcade inspirado em um jogo de Atari desenvo
 
 ### 🎮 Como fazer pra jogar?
 
-https://xhypergtx.itch.io/beta-1
+<b>Acesse o Link abaixo para baixar o jogo e ver todas as informações resumidas</b>
 
-<b>Acesse o Link acima para baixar o jogo e ver todas as informações resumidas</b>
+- https://xhypergtx.itch.io/beta-1
 
 #### Funcionalidades:
 
